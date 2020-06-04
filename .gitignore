@@ -73,8 +73,8 @@ gradlew.bat
 gradle/wrapper/gradle-wrapper.properties
 # Compiled class file
 *.class
-tokens
-credentials.json
+client_secret.json
+StoredCredential
 
 # Log file
 *.log
