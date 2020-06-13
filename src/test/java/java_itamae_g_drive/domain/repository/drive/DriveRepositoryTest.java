@@ -34,11 +34,10 @@ public class DriveRepositoryTest {
             contentsAttr.setEncoding("UTF-8");
 
             AuthenticationAttribure authAttr = new AuthenticationAttribure();
-            authAttr.setUserName("test_user");
             authAttr.addScope(DriveScopes.DRIVE);
 
             authService = new AuthenticationServiceImpl();
-            authService.authorize(contentsAttr, authAttr);
+            authService.authorizeInstalledApp(contentsAttr, authAttr);
             repository = new DriveRepositoryImpl(authAttr);
         }
 
@@ -82,11 +81,10 @@ public class DriveRepositoryTest {
             contentsAttr.setEncoding("UTF-8");
 
             AuthenticationAttribure authAttr = new AuthenticationAttribure();
-            authAttr.setUserName("test_user");
             authAttr.addScope(DriveScopes.DRIVE);
 
             authService = new AuthenticationServiceImpl();
-            authService.authorize(contentsAttr, authAttr);
+            authService.authorizeInstalledApp(contentsAttr, authAttr);
             repository = new DriveRepositoryImpl(authAttr);
         }
 
@@ -132,11 +130,10 @@ public class DriveRepositoryTest {
             contentsAttr.setEncoding("UTF-8");
 
             AuthenticationAttribure authAttr = new AuthenticationAttribure();
-            authAttr.setUserName("test_user");
             authAttr.addScope(DriveScopes.DRIVE);
 
             authService = new AuthenticationServiceImpl();
-            authService.authorize(contentsAttr, authAttr);
+            authService.authorizeInstalledApp(contentsAttr, authAttr);
             repository = new DriveRepositoryImpl(authAttr);
         }
 
