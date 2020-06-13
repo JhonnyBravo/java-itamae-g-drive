@@ -174,11 +174,10 @@ public class Main {
 
         try {
             authAttr = new AuthenticationAttribure();
-            authAttr.setUserName("g_drive_user");
             authAttr.addScope(DriveScopes.DRIVE);
 
             authService = new AuthenticationServiceImpl();
-            authService.authorize(contentsAttr, authAttr);
+            authService.authorizeInstalledApp(contentsAttr, authAttr);
 
             driveService = new DriveServiceImpl(authAttr);
 
